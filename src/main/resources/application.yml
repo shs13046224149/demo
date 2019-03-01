@@ -1,0 +1,15 @@
+#修改端口号
+server:
+  port: 8888
+
+#spring相关配置
+spring:
+  datasource:   #数据源连接池
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=UTF8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.huhang.pojo
