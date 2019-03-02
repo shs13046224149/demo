@@ -1,0 +1,13 @@
+server:
+  port: 6969 # 服务端口
+
+spring:
+  application:
+    name: demo_client   #客户端服务名称
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6868/eureka/
+  instance:
+    prefer‐ip‐address: true  #配置服务时启用ip地址
